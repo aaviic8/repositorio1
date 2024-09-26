@@ -9,8 +9,8 @@ qs = os.environ.get('QUERY_STRING')
 
 parametros = urllib.parse.parse_qs(qs)
 
-num1 = int(parametros.get('numero1',['0'])[0])
-num2 = int(parametros.get('numero2',['0'])[0])
+nums1 = int(parametros.get('num1',['0'])[0])
+nums2 = int(parametros.get('num2',['0'])[0])
 
 print('''
 <!DOCTYPE html>
@@ -23,8 +23,8 @@ print('''
 <body>
         ''')
 
-print('<h1>',num1, '</h1>')
-print('<h1>',num2, '</h1>')
+print('<h1>',nums1, '</h1>')
+print('<h1>',nums2, '</h1>')
 
 print('''
 </body>
